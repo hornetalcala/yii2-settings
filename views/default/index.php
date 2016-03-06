@@ -60,7 +60,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'key',
                 'value:ntext',
                 [
-                    'class' => '\hornetalcala\grid\ToggleColumn',
+                    'class' => '\pheme\grid\ToggleColumn',
                     'attribute' => 'active',
                     'filter' => [1 => Yii::t('yii', 'Yes'), 0 => Yii::t('yii', 'No')],
                 ],

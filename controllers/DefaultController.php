@@ -11,7 +11,7 @@ namespace hornetalcala\settings\controllers;
 use Yii;
 use hornetalcala\settings\models\Setting;
 use hornetalcala\settings\models\SettingSearch;
-use hornetalcala\grid\actions\ToggleAction;
+use pheme\grid\actions\ToggleAction;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
