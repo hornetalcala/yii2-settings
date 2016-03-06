@@ -7,12 +7,12 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-use pheme\settings\Module;
-use \pheme\settings\models\Setting;
+use hornetalcala\settings\Module;
+use \hornetalcala\settings\models\Setting;
 
 /**
  * @var yii\web\View $this
- * @var pheme\settings\models\Setting $model
+ * @var hornetalcala\settings\models\Setting $model
  * @var yii\widgets\ActiveForm $form
  */
 ?>

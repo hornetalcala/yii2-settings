@@ -6,12 +6,12 @@
  * @license MIT http://opensource.org/licenses/MIT
  */
 
-namespace pheme\settings\controllers;
+namespace hornetalcala\settings\controllers;
 
 use Yii;
-use pheme\settings\models\Setting;
-use pheme\settings\models\SettingSearch;
-use pheme\grid\actions\ToggleAction;
+use hornetalcala\settings\models\Setting;
+use hornetalcala\settings\models\SettingSearch;
+use hornetalcala\grid\actions\ToggleAction;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -54,7 +54,7 @@ class DefaultController extends Controller
         return [
             'toggle' => [
                 'class' => ToggleAction::className(),
-                'modelClass' => 'pheme\settings\models\Setting',
+                'modelClass' => 'hornetalcala\settings\models\Setting',
                 //'setFlash' => true,
             ]
         ];

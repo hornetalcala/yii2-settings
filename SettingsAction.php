@@ -1,5 +1,5 @@
 <?php
-namespace pheme\settings;
+namespace hornetalcala\settings;
 
 use Yii;
 use yii\base\Action;

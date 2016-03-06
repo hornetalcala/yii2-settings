@@ -6,7 +6,7 @@
  * @license MIT http://opensource.org/licenses/MIT
  */
 
-namespace pheme\settings;
+namespace hornetalcala\settings;
 
 use Yii;
 
@@ -18,7 +18,7 @@ class Module extends \yii\base\Module
     /**
      * @var string The controller namespace to use
      */
-    public $controllerNamespace = 'pheme\settings\controllers';
+    public $controllerNamespace = 'hornetalcala\settings\controllers';
 
     /**
      *
@@ -37,7 +37,7 @@ class Module extends \yii\base\Module
     public function init()
     {
         parent::init();
-        $this->registerTranslations();
+        //$this->registerTranslations();
     }
 
     /**
@@ -48,7 +48,7 @@ class Module extends \yii\base\Module
         Yii::$app->i18n->translations['extensions/yii2-settings/*'] = [
             'class' => 'yii\i18n\PhpMessageSource',
             'sourceLanguage' => $this->sourceLanguage,
-            'basePath' => '@vendor/pheme/yii2-settings/messages',
+            'basePath' => '@vendor/hornetalcala/yii2-settings/messages',
             'fileMap' => [
                 'extensions/yii2-settings/settings' => 'settings.php',
             ],
@@ -68,6 +68,6 @@ class Module extends \yii\base\Module
      */
     public static function t($category, $message, $params = [], $language = null)
     {
-        return Yii::t('extensions/yii2-settings/' . $category, $message, $params, $language);
+        return Yii::t($category, $message, $params, $language);
     }
 }

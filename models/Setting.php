@@ -5,9 +5,9 @@
  * @license MIT http://opensource.org/licenses/MIT
  */
 
-namespace pheme\settings\models;
+namespace hornetalcala\settings\models;
 
-use pheme\settings\Module;
+use hornetalcala\settings\Module;
 use yii\base\DynamicModel;
 use yii\base\InvalidParamException;
 use yii\behaviors\TimestampBehavior;

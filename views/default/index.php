@@ -7,14 +7,14 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
-use pheme\settings\Module;
-use pheme\settings\models\Setting;
+use hornetalcala\settings\Module;
+use hornetalcala\settings\models\Setting;
 use yii\helpers\ArrayHelper;
 use yii\widgets\Pjax;
 
 /**
  * @var yii\web\View $this
- * @var pheme\settings\models\SettingSearch $searchModel
+ * @var hornetalcala\settings\models\SettingSearch $searchModel
  * @var yii\data\ActiveDataProvider $dataProvider
  */
 
@@ -60,7 +60,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'key',
                 'value:ntext',
                 [
-                    'class' => '\pheme\grid\ToggleColumn',
+                    'class' => '\hornetalcala\grid\ToggleColumn',
                     'attribute' => 'active',
                     'filter' => [1 => Yii::t('yii', 'Yes'), 0 => Yii::t('yii', 'No')],
                 ],
